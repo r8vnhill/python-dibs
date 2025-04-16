@@ -18,6 +18,9 @@ The code in this repository is designed to support the lessons from DIBS, focusi
 - Comprehensions (lists, sets, dictionaries)
 - Collection transformations and filtering
 - Optional values and configuration logic
+- Pythonic patterns for executable scripts
+
+It also uses [`uv`](https://github.com/astral-sh/uv) as a fast and modern Python package manager to simplify running examples and managing environments. This is aligned with the course's goal of exploring clean build systems and reproducible development workflows.
 
 All examples are intended for **educational purposes**, helping learners understand core concepts before applying them in larger systems or libraries.
 
@@ -27,18 +30,28 @@ All examples are intended for **educational purposes**, helping learners underst
 type-fundamentals/
 ├── basics/
 │   ├── __init__.py
-│   └── cycles.py        # Functions related to loops and data processing
+│   ├── cycles.py        # Functions related to loops and data processing
+│   └── main.py          # Script entry point (with idiomatic main guard)
 ├── pyproject.toml       # Metadata for this subproject
 ```
 
 ## 🧪 Usage
 
+This project uses [`uv`](https://github.com/astral-sh/uv), a modern Python tool for dependency resolution and execution.
+
 To try out the examples interactively:
 
 ```bash
-cd type-fundamentals
-python basics/cycles.py
+uv run type-fundamentals/basics/cycles.py
 ```
+
+To run the `main.py` entry point (used in the lesson on script structure):
+
+```bash
+uv run type-fundamentals/basics/main.py
+```
+
+This will print a reflective quote, demonstrating Python’s idiomatic `if __name__ == '__main__'` usage.
 
 ## 📝 License
 
@@ -49,4 +62,5 @@ This repository is released under the terms of the [BSD 2-Clause License](./LICE
 Please review our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
 ---
+
 For the full course content (in Spanish), refer to the [official DIBS website](https://dibs.pages.dev).

@@ -1,0 +1,19 @@
+version = 1
+revision = 1
+requires-python = ">=3.10"
+
+[manifest]
+members = [
+    "python-dibs",
+    "type-fundamentals",
+]
+
+[[package]]
+name = "python-dibs"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "type-fundamentals"
+version = "0.1.0"
+source = { virtual = "type-fundamentals" }
