@@ -19,6 +19,8 @@ The code in this repository is designed to support the lessons from DIBS, focusi
 - Collection transformations and filtering
 - Optional values and configuration logic
 - Pythonic patterns for executable scripts
+- Function definitions and runtime behavior
+- Variable declarations, mutability, and immutability conventions
 
 It also uses [`uv`](https://github.com/astral-sh/uv) as a fast and modern Python package manager to simplify running examples and managing environments. This is aligned with the course's goal of exploring clean build systems and reproducible development workflows.
 
@@ -31,6 +33,8 @@ type-fundamentals/
 ├── basics/
 │   ├── __init__.py
 │   ├── cycles.py        # Functions related to loops and data processing
+│   ├── functions.py     # Examples of function declarations, parameters, and type hints
+│   ├── variables.py     # Examples of variable assignment, Final, and mutability
 │   └── main.py          # Script entry point (with idiomatic main guard)
 ├── pyproject.toml       # Metadata for this subproject
 ```
@@ -43,6 +47,8 @@ To try out the examples interactively:
 
 ```bash
 uv run type-fundamentals/basics/cycles.py
+uv run type-fundamentals/basics/functions.py
+uv run type-fundamentals/basics/variables.py
 ```
 
 To run the `main.py` entry point (used in the lesson on script structure):
