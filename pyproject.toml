@@ -1,0 +1,13 @@
+[project]
+name = "python-dibs"
+version = "0.1.0"
+description = "Companion code for the DIBS course"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["type-fundamentals"]
+
+[tool.uv.sources]
+type-fundamentals = { workspace = true }

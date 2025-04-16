@@ -1,0 +1,5 @@
+[project]
+name = "type-fundamentals"
+version = "0.1.0"
+description = "Language basics and type system"
+requires-python = ">=3.10"
