@@ -164,7 +164,7 @@ def cast_spell(caster: str, *companions: str, **spell_details) -> None:
         print(f"{key.capitalize()}: {value}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("▶️ add(2, 3)")
     print(add(2, 3))  # ➜ 5
 
@@ -178,7 +178,9 @@ if __name__ == '__main__':
     print(summon("Gandalf"))  # ➜ Gandalf has been summoned to Rivendell.
 
     print("\n▶️ summon('Aragorn', 'Minas Tirith')")
-    print(summon("Aragorn", "Minas Tirith"))  # ➜ Aragorn has been summoned to Minas Tirith.
+    print(
+        summon("Aragorn", "Minas Tirith")
+    )  # ➜ Aragorn has been summoned to Minas Tirith.
 
     print("\n▶️ throw_pokeballs('Pikachu', 25, 'Charmander')")
     throw_pokeballs("Pikachu", 25, "Charmander")
@@ -186,7 +188,9 @@ if __name__ == '__main__':
     # ➜ You threw a Pokéball at Pokémon #25!
     # ➜ You threw a Pokéball at Charmander!
 
-    print("\n▶️ describe_technique('Phantom Mirage', speed='extreme', class_type='offensive')")
+    print(
+        "\n▶️ describe_technique('Phantom Mirage', speed='extreme', class_type='offensive')"
+    )
     describe_technique("Phantom Mirage", speed="extreme", class_type="offensive")
     # ➜ Technique: Phantom Mirage
     # ➜   speed: extreme

@@ -20,6 +20,7 @@ comprehensions, iteration, and optional values.
 
 This module is intended for educational or foundational purposes.
 """
+
 from typing import TypeVar, Iterable
 
 T = TypeVar("T")
@@ -101,8 +102,7 @@ def known_clan_members(data: list[tuple[str, str | None]]) -> dict[str, str]:
         dict[str, str]: A dictionary of character names with known (non-None) clan affiliations.
     """
     return {
-        char_name: char_clan for char_name, char_clan in data
-        if char_clan is not None
+        char_name: char_clan for char_name, char_clan in data if char_clan is not None
     }
 
 
@@ -152,7 +152,7 @@ def load_first_valid_config(sources: list[str]) -> int | None:
     return None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("=== 🔁 print_characters ===")
     print_characters(["Rick", "Michonne", "Carl", "Negan", "Andrea"])
     print()
@@ -176,7 +176,7 @@ if __name__ == '__main__':
         ("Jin-Ie", None),
         ("So-Chun Hyuk", "Muran"),
         ("Sera Kang", "Muran"),
-        ("Goomoonryong", None)
+        ("Goomoonryong", None),
     ]
     clans = known_clan_members(clan_members)
     for name, clan in clans.items():

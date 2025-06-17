@@ -8,5 +8,5 @@ def main() -> None:
     print("Treasure the experience. Dreams fade away after you wake up.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

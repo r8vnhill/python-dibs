@@ -16,9 +16,10 @@ when a constant marked as `Final` is reassigned.
 
 This module is intended for educational purposes to explain basic variable semantics in Python.
 """
+
 from typing import Final
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     name = "Emilia"
     mana = 80
     print(f"Name: {name}, Mana: {mana}")
