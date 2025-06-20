@@ -18,6 +18,7 @@ uv run ./path/to/book.py
 from dataclasses import dataclass
 from typing import Final
 
+
 @dataclass
 class Book:
     """Represents a book with basic bibliographic information.
@@ -45,13 +46,14 @@ class Book:
     :ivar author: The author of the book. Defaults to "Unknown".
     :type author: str, optional
     """
+
     title: str
     year: int
     author: str = "Unknown"
 
 
 # If run as a script, demonstrate dataclass capabilities.
-if __name__ == '__main__':
+if __name__ == "__main__":
     book: Final[Book] = Book(title="The Two Towers", year=1954, author="J.R.R. Tolkien")
 
     print("=== 📘 Representation: ===")

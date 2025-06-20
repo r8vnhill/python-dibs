@@ -21,7 +21,7 @@ uv run ./path/to/armor.py
 from dataclasses import dataclass
 
 
-class _Armor:   # Preceding underscore just to distinguish it from the `Armor` data class
+class _Armor:  # Preceding underscore just to distinguish it from the `Armor` data class
     """
     A manually implemented class representing an armored suit.
 
@@ -75,11 +75,12 @@ class Armor:
     :ivar power: The armor's power level.
     :type power: int
     """
+
     model: str
     power: int
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("=== 🔗 Reference comparison with regular class ===")
     mark1 = _Armor("Mark I", 75)
     mark1_clone = _Armor("Mark I", 75)
@@ -95,6 +96,6 @@ if __name__ == '__main__':
     b = a
     c = Armor("Hulkbuster", 150)
 
-    print(f"a == c? {a == c}")   # True – same content
-    print(f"a is c? {a is c}")   # False – different objects
-    print(f"a is b? {a is b}")   # True – same reference
+    print(f"a == c? {a == c}")  # True – same content
+    print(f"a is c? {a is c}")  # False – different objects
+    print(f"a is b? {a is b}")  # True – same reference
