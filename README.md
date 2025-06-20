@@ -4,27 +4,33 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/downloads/)
 [![Educational](https://img.shields.io/badge/purpose-educational-yellow)](https://dibs.pages.dev)
 [![Build](https://img.shields.io/badge/status-stable-brightgreen)]()
-[![DIBS Website](https://img.shields.io/badge/website-dibs.pages.dev-purple)](https://dibs.pages.dev)
+[![DIBS Website](https://img.shields.io/badge/website-dibs.ravenhill.cl-purple)](https://dibs.ravenhill.cl)
 
-This repository contains the companion code for the course **"Diseño e Implementación de Bibliotecas de Software" (DIBS)**.
+This repository contains companion code for the course **"Diseño e Implementación de Bibliotecas de Software" (DIBS)**.
 
-The course is taught in **Spanish**, but this repository is written in **English** to make it accessible to a broader audience and to align with common programming conventions and documentation standards.
+>[!note]
+> While the course is taught in **Spanish**, the code and documentation here are in **English** to ensure clarity, accessibility, and alignment with broader software development conventions.
+
+---
 
 ## 🔍 About
 
-The code in this repository is designed to support the lessons from DIBS, focusing on practical and idiomatic usage of language features such as:
+This repository complements multiple lessons from the DIBS course, with a focus on writing **idiomatic, expressive, and reusable code** in Python. It showcases practical design techniques that are especially relevant when building libraries.
 
-- Loops and control flow
-- Comprehensions (lists, sets, dictionaries)
-- Collection transformations and filtering
-- Optional values and configuration logic
-- Pythonic patterns for executable scripts
-- Function definitions and runtime behavior
-- Variable declarations, mutability, and immutability conventions
+The repository includes examples covering:
 
-It also uses [`uv`](https://github.com/astral-sh/uv) as a fast and modern Python package manager to simplify running examples and managing environments. This is aligned with the course's goal of exploring clean build systems and reproducible development workflows.
+- Loops, comprehensions, and functional combinators
+- Variable binding and mutability (`Final`, `frozen=True`)
+- Function declarations and idiomatic script entry points
+- Data validation and type-safe modeling
+- Pythonic patterns for configuration and control flow
+- Usage of [`@dataclass`](https://docs.python.org/3/library/dataclasses.html) for product types (records)
 
-All examples are intended for **educational purposes**, helping learners understand core concepts before applying them in larger systems or libraries.
+It also uses [`uv`](https://github.com/astral-sh/uv) as a fast, modern Python package manager to streamline dependency management and execution — aligned with the course's goals on reproducibility and clean build systems.
+
+All code is intended for **educational purposes** and designed to be lightweight, idiomatic, and easy to modify for experimentation.
+
+---
 
 ## 📁 Project Structure
 
@@ -32,41 +38,47 @@ All examples are intended for **educational purposes**, helping learners underst
 type-fundamentals/
 ├── basics/
 │   ├── __init__.py
-│   ├── cycles.py        # Functions related to loops and data processing
-│   ├── functions.py     # Examples of function declarations, parameters, and type hints
-│   ├── variables.py     # Examples of variable assignment, Final, and mutability
-│   └── main.py          # Script entry point (with idiomatic main guard)
-├── pyproject.toml       # Metadata for this subproject
+│   ├── cycles.py              # Loops and iteration patterns
+│   ├── functions.py           # Function declarations and behavior
+│   ├── variables.py           # Variable binding, Final, mutability
+│   └── main.py                # Idiomatic script entry point
+├── algebraic_types/
+│   └── product/
+│       ├── comic.py           # Mutability and frozen dataclasses
+│       ├── ghoul.py           # Immutability with replace()
+│       ├── pokemon.py         # Properties and helper methods
+│       ├── song.py            # Validation with __post_init__
+│       ├── videogame.py       # Destructuring via astuple
+│       └── __init__.py
+├── pyproject.toml             # Project metadata
 ```
-
-## 🧪 Usage
-
-This project uses [`uv`](https://github.com/astral-sh/uv), a modern Python tool for dependency resolution and execution.
-
-To try out the examples interactively:
-
-```bash
-uv run type-fundamentals/basics/cycles.py
-uv run type-fundamentals/basics/functions.py
-uv run type-fundamentals/basics/variables.py
-```
-
-To run the `main.py` entry point (used in the lesson on script structure):
-
-```bash
-uv run type-fundamentals/basics/main.py
-```
-
-This will print a reflective quote, demonstrating Python’s idiomatic `if __name__ == '__main__'` usage.
-
-## 📝 License
-
-This repository is released under the terms of the [BSD 2-Clause License](./LICENSE).
-
-## 🤝 Contributing
-
-Please review our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
 ---
 
-For the full course content (in Spanish), refer to the [official DIBS website](https://dibs.pages.dev).
+## 🧪 Usage
+
+This project uses [`uv`](https://github.com/astral-sh/uv), a modern and fast Python package manager.
+
+To run specific examples:
+
+```bash
+uv run type-fundamentals/basics/functions.py
+uv run type-fundamentals/algebraic_types/product/ghoul.py
+uv run type-fundamentals/algebraic_types/product/song.py
+```
+
+---
+
+## 📝 License
+
+This repository is licensed under the [BSD 2-Clause License](./LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before submitting issues or pull requests.
+
+---
+
+For full course content (in Spanish), visit the [official DIBS site](https://dibs.ravenhill.cl).
