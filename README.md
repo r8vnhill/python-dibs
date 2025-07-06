@@ -8,77 +8,50 @@
 
 This repository contains companion code for the course **"Diseño e Implementación de Bibliotecas de Software" (DIBS)**.
 
->[!note]
+> [!note]
 > While the course is taught in **Spanish**, the code and documentation here are in **English** to ensure clarity, accessibility, and alignment with broader software development conventions.
 
----
+## 📖 Table of Contents
 
-## 🔍 About
+- [DIBS Course Companion Repository](#dibs-course-companion-repository)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🎓 Lessons](#-lessons)
+  - [� Contributing](#-contributing)
+    - [How to Contribute](#how-to-contribute)
+  - [🛡️ License](#️-license)
+  - [🌐 DIBS Website](#-dibs-website)
 
-This repository complements multiple lessons from the DIBS course, with a focus on writing **idiomatic, expressive, and reusable code** in Python. It showcases practical design techniques that are especially relevant when building libraries.
+## 🎓 Lessons
 
-The repository includes examples covering:
+This repository includes working examples and code fragments discussed in the following lessons from the DIBS course:
 
-- Loops, comprehensions, and functional combinators
-- Variable binding and mutability (`Final`, `frozen=True`)
-- Function declarations and idiomatic script entry points
-- Data validation and type-safe modeling
-- Pythonic patterns for configuration and control flow
-- Usage of [`@dataclass`](https://docs.python.org/3/library/dataclasses.html) for product types (records)
+1. **[Sum Types as Enumerations in Python](https://dibs.ravenhill.cl/docs/type-fundamentals/algebraic-data-types/enums/py/)** — Exploring how to model sum types using `Enum` and `match` in Python, introduced in Python 3.10.
 
-It also uses [`uv`](https://github.com/astral-sh/uv) as a fast, modern Python package manager to streamline dependency management and execution — aligned with the course's goals on reproducibility and clean build systems.
-
-All code is intended for **educational purposes** and designed to be lightweight, idiomatic, and easy to modify for experimentation.
-
----
-
-## 📁 Project Structure
-
-```text
-type-fundamentals/
-├── basics/
-│   ├── __init__.py
-│   ├── cycles.py              # Loops and iteration patterns
-│   ├── functions.py           # Function declarations and behavior
-│   ├── variables.py           # Variable binding, Final, mutability
-│   └── main.py                # Idiomatic script entry point
-├── algebraic_types/
-│   └── product/
-│       ├── comic.py           # Mutability and frozen dataclasses
-│       ├── ghoul.py           # Immutability with replace()
-│       ├── pokemon.py         # Properties and helper methods
-│       ├── song.py            # Validation with __post_init__
-│       ├── videogame.py       # Destructuring via astuple
-│       └── __init__.py
-├── pyproject.toml             # Project metadata
-```
-
----
-
-## 🧪 Usage
-
-This project uses [`uv`](https://github.com/astral-sh/uv), a modern and fast Python package manager.
-
-To run specific examples:
-
-```bash
-uv run type-fundamentals/basics/functions.py
-uv run type-fundamentals/algebraic_types/product/ghoul.py
-uv run type-fundamentals/algebraic_types/product/song.py
-```
-
----
-
-## 📝 License
-
-This repository is licensed under the [BSD 2-Clause License](./LICENSE).
-
----
+More lessons will be added as the course progresses.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before submitting issues or pull requests.
+This project is primarily educational and not intended to evolve as a production-grade library. That said, contributions are welcome, especially if:
 
----
+* You find an error in the code or documentation.
+* You want to suggest improvements for clarity or structure.
+* You’d like to add examples or extensions for other course topics.
 
-For full course content (in Spanish), visit the [official DIBS site](https://dibs.ravenhill.cl).
+### How to Contribute
+
+1. [Open an issue](https://github.com/r8vnhill/haskell-dibs/issues) to describe your idea or report a bug.
+2. Follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
+3. Feel free to fork the repo and submit a pull request with your changes.
+
+## 🛡️ License
+
+This code is released under the **[BSD 2-Clause License](./LICENSE)**.
+
+You’re free to use, modify, and share the code in personal or educational projects — just retain the license and attribution.
+
+## 🌐 DIBS Website
+
+To access the full course (in Spanish), visit:
+👉 [https://dibs.ravenhill.cl](https://dibs.ravenhill.cl)
+
+There you'll find lesson explanations, exercises, and supporting materials.
