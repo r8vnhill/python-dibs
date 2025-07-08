@@ -1,10 +1,11 @@
 # DIBS Course Companion Repository
 
-[![License: BSD-2-Clause](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/downloads/)
-[![Educational](https://img.shields.io/badge/purpose-educational-yellow)](https://dibs.pages.dev)
-[![Build](https://img.shields.io/badge/status-stable-brightgreen)]()
-[![DIBS Website](https://img.shields.io/badge/website-dibs.ravenhill.cl-purple)](https://dibs.ravenhill.cl)
+[![uv](https://img.shields.io/badge/build%20tool-uv-blue?logo=uv)](https://docs.astral.sh/uv/getting-started/)
+[![License: BSD-2-Clause](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](./LICENSE)
+[![Educational](https://img.shields.io/badge/purpose-educational-yellow)](https://dibs.ravenhill.cl)
+[![Status](https://img.shields.io/badge/status-stable-brightgreen)]()
+[![DIBS Site](https://img.shields.io/badge/website-dibs.ravenhill.cl-purple)](https://dibs.ravenhill.cl)
 
 This repository contains companion code for the course **"Diseño e Implementación de Bibliotecas de Software" (DIBS)**.
 
@@ -16,8 +17,9 @@ This repository contains companion code for the course **"Diseño e Implementaci
 - [DIBS Course Companion Repository](#dibs-course-companion-repository)
   - [📖 Table of Contents](#-table-of-contents)
   - [🎓 Lessons](#-lessons)
-  - [� Contributing](#-contributing)
-    - [How to Contribute](#how-to-contribute)
+  - [🧑‍💻 Getting Started](#-getting-started)
+    - [Requirements](#requirements)
+    - [Clone the Repository](#clone-the-repository)
   - [🛡️ License](#️-license)
   - [🌐 DIBS Website](#-dibs-website)
 
@@ -25,29 +27,49 @@ This repository contains companion code for the course **"Diseño e Implementaci
 
 This repository includes working examples and code fragments discussed in the following lessons from the DIBS course:
 
-1. **[Sum Types as Enumerations in Python](https://dibs.ravenhill.cl/docs/type-fundamentals/algebraic-data-types/enums/py/)** — Exploring how to model sum types using `Enum` and `match` in Python, introduced in Python 3.10.
+1. 📘 **[Variable Declarations](https://dibs.ravenhill.cl/docs/type-fundamentals/basics/variables/py)**: Learn how Python’s flexible approach to variables and properties enables rapid development, while also exploring the trade-offs it presents when building maintainable libraries.
+2. 📘 **[Sum Types as Enumerations in Python](https://dibs.ravenhill.cl/docs/type-fundamentals/algebraic-data-types/enums/py/)**: Exploring how to model sum types using `Enum` and `match` in Python, introduced in Python 3.10.
 
 More lessons will be added as the course progresses.
 
-## 🤝 Contributing
+## 🧑‍💻 Getting Started
 
-This project is primarily educational and not intended to evolve as a production-grade library. That said, contributions are welcome, especially if:
+### Requirements
 
-* You find an error in the code or documentation.
-* You want to suggest improvements for clarity or structure.
-* You’d like to add examples or extensions for other course topics.
+- Python 3.10 or higher
+- [uv](https://docs.astral.sh/uv/getting-started/) for running the examples
+- Recommended: [PyCharm](https://www.jetbrains.com/pycharm/) or any other Python IDE for a better development experience.
 
-### How to Contribute
+> For installation help, see the [setup guide](https://dibs.ravenhill.cl/docs/build-systems/init/uv).
 
-1. [Open an issue](https://github.com/r8vnhill/haskell-dibs/issues) to describe your idea or report a bug.
-2. Follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
-3. Feel free to fork the repo and submit a pull request with your changes.
+### Clone the Repository
+
+To get started, clone the repository to your local machine:
+
+```bash
+git clone https://gitlab.com/r8vnhill/python-dibs.git
+cd python-dibs
+```
+
+To run the examples, you can use the `uv` command:
+
+```bash
+uv run <example_file.py>
+```
+
+> Replace `<example_file.py>` with the specific Python file you want to run.
+
+For example:
+
+```bash
+uv run type-fundamentals/basics/main.py
+```
 
 ## 🛡️ License
 
-This code is released under the **[BSD 2-Clause License](./LICENSE)**.
+This project is licensed under the **[BSD 2-Clause License](./LICENSE)**.
 
-You’re free to use, modify, and share the code in personal or educational projects — just retain the license and attribution.
+You may use, adapt, and share this code freely for personal, academic, or educational purposes, as long as attribution is given.
 
 ## 🌐 DIBS Website
 
