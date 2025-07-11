@@ -29,6 +29,7 @@ This repository includes working examples and code fragments discussed in the fo
 
 1. 📘 **[Variable Declarations](https://dibs.ravenhill.cl/docs/type-fundamentals/basics/variables/py)**: Learn how Python’s flexible approach to variables and properties enables rapid development, while also exploring the trade-offs it presents when building maintainable libraries.
 2. 📘 **[Sum Types as Enumerations in Python](https://dibs.ravenhill.cl/docs/type-fundamentals/algebraic-data-types/enums/py/)**: Exploring how to model sum types using `Enum` and `match` in Python, introduced in Python 3.10.
+3. 📘 **[Advanced Modeling with Enumerations](https://dibs.ravenhill.cl/docs/type-fundamentals/algebraic-data-types/idiom-enum/py)**: A deeper dive into using `Enum` for more complex data modeling scenarios.
 
 More lessons will be added as the course progresses.
 
